@@ -1759,6 +1759,10 @@ class Archive_Tar extends PEAR
       return $p_path;
     }
     // }}}
+    
+    function raiseError($p_message){
+    	throw new PrestaShopException($p_message);
+    }
 
 }
 ?>
